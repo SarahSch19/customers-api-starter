@@ -7,4 +7,20 @@
         <exception-type>fr.esgi.customer.exception.CustomersParsingException</exception-type>
         <location>/error</location>
     </error-page>
+    <error-page>
+        <exception-type>fr.esgi.customer.exception.CustomersResourceNotFoundException</exception-type>
+        <location>/error</location>
+    </error-page>
+    <error-page>
+        <exception-type>fr.esgi.customer.exception.MalFormattedCustomersResourceUriException</exception-type>
+        <location>/error</location>
+    </error-page>
+    <error-page>
+        <exception-type>fr.esgi.customer.exception.NotFoundCustomerException</exception-type>
+        <location>/errorNotFound</location>
+    </error-page>
+    <error-page>
+        <exception-type>fr.esgi.customer.exception.MissingCustomerId</exception-type>
+        <location>/errorNoId</location>
+    </error-page>
 </web-app>

@@ -20,8 +20,7 @@ public class CustomersConsultationServlet extends HttpServlet {
         try {
             List<Customer> customersList = customersFileParser.parse("customers.csv");
             System.out.println(customersList);
-            request.setAttribute("customers", customersList);.
-
+            request.setAttribute("customers", customersList);
             request.getRequestDispatcher("/listCustomers.jsp").forward(request, response);
         } catch (Exception e) {
             throw new CustomersParsingException("Une erreur est survenue", e);
