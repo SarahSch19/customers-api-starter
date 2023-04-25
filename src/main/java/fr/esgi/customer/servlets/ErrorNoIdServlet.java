@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 @WebServlet("/errorNoId")
-public class ErrorNoId extends HttpServlet {
+public class ErrorNoIdServlet extends HttpServlet {
     @Override
     protected void doGet (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.getRequestDispatcher("/errorNoId.jsp").forward(request, response);
